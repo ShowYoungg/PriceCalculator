@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price List"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+
+    <CheckBox
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Fish $500/kg"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/title"/>
+
+    <EditText
+        android:id="@+id/number1q"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Qty"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:inputType="number"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Crayfish $700/kg"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/number1"/>
+
+    <EditText
+        android:id="@+id/number2q"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Qty"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/number1q"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/number3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Lobster $1500/kg"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/number2"/>
+
+    <EditText
+        android:id="@+id/number3q"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Qty"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/number2q"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number3"
+        android:layout_centerHorizontal="true"
+        android:text="CALCULATE"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/calculate"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        tools:text="Your total product price is $7000"
+        android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>

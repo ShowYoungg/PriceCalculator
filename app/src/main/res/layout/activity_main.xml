@@ -16,8 +16,7 @@
         android:text="Price List"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
-        android:gravity="center_horizontal"/>
-
+        android:gravity="center_horizontal"/> <!--Price List -->
     <CheckBox
         android:id="@+id/number1"
         android:layout_width="wrap_content"
@@ -26,8 +25,7 @@
         android:text="Fish $500/kg"
         android:textSize="25sp"
         android:textColor="@color/colorAccent"
-        android:layout_below="@id/title"/>
-
+        android:layout_below="@id/title"/> <!--Fish $500/kg -->
     <EditText
         android:id="@+id/number1q"
         android:layout_width="100dp"
@@ -36,7 +34,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/title"
         android:inputType="number"
-        android:textSize="20sp"/>
+        android:textSize="20sp"/> <!--Fish Qty -->
     <CheckBox
         android:id="@+id/number2"
         android:layout_width="wrap_content"
@@ -45,8 +43,7 @@
         android:text="Crayfish $700/kg"
         android:textSize="25sp"
         android:textColor="@color/colorAccent"
-        android:layout_below="@id/number1"/>
-
+        android:layout_below="@id/number1"/> <!--Crayfish $700/kg -->
     <EditText
         android:id="@+id/number2q"
         android:layout_width="100dp"
@@ -55,8 +52,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/number1q"
         android:inputType="number"
-        android:textSize="20sp"/>
-
+        android:textSize="20sp"/> <!--Crayfish Qty-->
     <CheckBox
         android:id="@+id/number3"
         android:layout_width="wrap_content"
@@ -65,8 +61,7 @@
         android:text="Lobster $1500/kg"
         android:textSize="25sp"
         android:textColor="@color/colorAccent"
-        android:layout_below="@id/number2"/>
-
+        android:layout_below="@id/number2"/> <!--Lobster $1500/kg -->
     <EditText
         android:id="@+id/number3q"
         android:layout_width="100dp"
@@ -75,8 +70,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/number2q"
         android:inputType="number"
-        android:textSize="20sp"/>
-
+        android:textSize="20sp"/> <!--Lobster Qty -->
     <Button
         android:id="@+id/calculate"
         android:layout_width="match_parent"
@@ -86,8 +80,7 @@
         android:text="CALCULATE"
         android:layout_marginTop="20dp"
         android:layout_margin="10dp"
-        android:background="@color/colorAccent"/>
-
+        android:background="@color/colorAccent"/>   <!--CALCULATE -->
     <TextView
         android:id="@+id/total"
         android:layout_width="match_parent"
@@ -97,7 +90,5 @@
         android:layout_marginTop="10dp"
         android:layout_margin="10dp"
         tools:text="Your total product price is $7000"
-        android:textColor="@color/colorAccent"/>
-
-
+        android:textColor="@color/colorAccent"/> <!--Your total product price ... -->
 </RelativeLayout>
